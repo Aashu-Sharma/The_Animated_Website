@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Hero, About, Navbar} from './comps/index.js';
+import {Hero, About, Navbar, Features} from './comps/index.js';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Features/>
     </main>
   );
 }
