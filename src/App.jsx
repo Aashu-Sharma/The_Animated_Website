@@ -1,13 +1,23 @@
-import { useState } from "react";
-import {Hero, About, Navbar, Features} from './comps/index.js';
+import {
+  Hero,
+  About,
+  Navbar,
+  Features,
+  Story,
+  Contact,
+  Footer,
+} from "./comps/index.js";
 
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Features/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Features />
+      <Story />
+      <Contact />
+      <Footer />
     </main>
   );
 }

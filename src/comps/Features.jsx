@@ -4,10 +4,13 @@ import { TiLocationArrow } from "react-icons/ti";
 function BentoTilt({ children, className }) {
   const [transFormStyle, setTransFormStyle] = useState("");
   const itemRef = useRef(null);
+
   const handleMouseMove = (e) => {
     if (!itemRef.current) return;
+
     const { left, top, width, height } =
       itemRef.current.getBoundingClientRect();
+      
     const relativeX = (e.clientX - left) / width;
     const relativeY = (e.clientY - top) / height;
     const tiltX = (relativeY - 0.5) * 5;
